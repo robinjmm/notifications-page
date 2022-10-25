@@ -1,0 +1,108 @@
+@use "../base/variables" as *;
+
+.card {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--bg-card);
+    border-radius: 5px;
+    color: var(--text-primary);
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: toRem(30px);
+    }
+
+    &__title {
+        font-size: toRem(20px);
+        color: var(--text-dark);
+    }
+
+    &__notif-number {
+        font-size: toRem(18px);
+        display: inline-block;
+        color: var(--text-white);
+        background-color: var(--blue);
+        margin-left: toEm(5px, 18px);
+        padding: 0 toEm(10px, 18px);
+        border-radius: 5px;
+    }
+
+    &__notif {
+        display: flex;
+        align-items: start;
+        margin-bottom: toRem(15px);
+        font-size: toRem(14px);
+        padding: 20px 15px;
+
+        &-person {
+            color: var(--text-dark);
+            font-weight: var(--fw-bold);
+            margin-right: toEm(3px, 14px);
+        }
+
+        &-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        &-dm {
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            padding: toEm(15px, 14px) toEm(20px, 14px);
+            margin-top: 15px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--bg-dm);
+            }
+        }
+
+        &--unread {
+            background-color: var(--bg-unread);
+            border-radius: 10px;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__notif-message {
+        &--unread::after {
+            content: " ";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-left: 5px;
+            border-radius: 50%;
+            background-color: var(--red);
+        }
+    }
+
+    &__avatar {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    &__link{
+        font-weight: var(--fw-bold);
+        margin-left: toEm(2px, 14px);
+
+        &:active, &:visited {
+            color: var(--text-grey);
+
+        }
+
+        &--blue {
+            &:active, &:visited {
+                color: var(--text-blue);
+            }
+        }
+    }
+}

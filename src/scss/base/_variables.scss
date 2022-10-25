@@ -1,0 +1,36 @@
+:root {
+    // Colors
+    --text-white: hsl(0, 0%, 100%);
+    --text-primary: hsl(219, 14%, 63%);
+    --text-dark: hsl(224, 21%, 14%);
+    --text-grey: hsl(219, 12%, 42%);
+    --text-blue: hsl(219, 85%, 26%);
+
+    --bg-card: hsl(0, 0%, 100%);
+    --bg-body: hsl(210, 60%, 98%);
+    --bg-unread: hsl(210, 60%, 98%);
+    --bg-dm: hsl(211, 68%, 94%);
+
+    --border-color: hsl(205, 33%, 90%);
+
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+
+    // Fonts
+    --ff-primary: "Plus Jakarta Sans", sans-serif;
+    --fw-normal: 500;
+    --fw-bold: 800;
+}
+
+// Functions
+@function toRem($value) {
+    $remValue: calc(($value / 16px) *1rem);
+    @return $remValue;
+}
+
+// $value is the desired size
+// $base is font-size of the parent
+@function toEm($value, $base) {
+    $emValue: calc(($value / $base) * 1em);
+    @return $emValue;
+}

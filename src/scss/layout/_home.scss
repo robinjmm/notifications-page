@@ -1,0 +1,12 @@
+@use "../base/variables" as *;
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-normal);
+    font-size: toRem(16px);
+}
+
+main {
+    width: 100%;
+    padding: toRem(40px) 0;
+}
