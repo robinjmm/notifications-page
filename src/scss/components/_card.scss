@@ -19,6 +19,14 @@
         color: var(--text-dark);
     }
 
+    &__cta {
+        cursor: pointer;
+
+        &:hover {
+            color: var(--blue);
+        }
+    }
+
     &__notif-number {
         font-size: toRem(18px);
         display: inline-block;
@@ -40,6 +48,11 @@
             color: var(--text-dark);
             font-weight: var(--fw-bold);
             margin-right: toEm(3px, 14px);
+            cursor: pointer;
+
+            &:hover {
+                color: var(--blue);
+            }
         }
 
         &-img {
@@ -94,15 +107,19 @@
         font-weight: var(--fw-bold);
         margin-left: toEm(2px, 14px);
 
-        &:active, &:visited {
+        &:active, &:visited, &:focus {
             color: var(--text-grey);
 
         }
 
         &--blue {
-            &:active, &:visited {
+            &:active, &:visited, &:focus {
                 color: var(--text-blue);
             }
+        }
+
+        &:hover {
+            color: var(--blue);
         }
     }
 }
