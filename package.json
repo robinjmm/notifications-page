@@ -1,0 +1,28 @@
+{
+  "name": "notifications-page",
+  "version": "1.0.0",
+  "description": "My solution for the Notifications Page challenge from Frontendmentor.io",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinjmm/notifications-page.git"
+  },
+  "author": "robinjmm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robinjmm/notifications-page/issues"
+  },
+  "homepage": "https://github.com/robinjmm/notifications-page#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
