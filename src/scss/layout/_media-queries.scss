@@ -1,0 +1,13 @@
+@use "../base/variables" as *;
+
+@media (min-width: 768px) {
+    body {
+        background-color: var(--bg-body);
+    }
+
+    .card {
+        background-color: var(--bg-card);
+        padding: 35px 40px;
+        border-radius: 10px;
+    }
+}
