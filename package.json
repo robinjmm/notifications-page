@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/robinjmm/notifications-page#readme",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0"
   },
