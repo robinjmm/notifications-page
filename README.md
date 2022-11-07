@@ -6,7 +6,7 @@
 - [Site Preview](https://robinjmm-notifications-page.vercel.app/)
 
 ## About
-This is my solution for the Notifications Page challenge from [Frontendmentor.io](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC).
+This is my solution for the **Notifications Page** challenge from [Frontendmentor.io](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC).
 
 ## User Stories
 The user should be able to:
